@@ -1,25 +1,25 @@
 # Terms and Definitions
 
-[[#ComfyUI]]
+[ComfyUI](#ComfyUI)
 
-[[#Checkpoint]]
+[Checkpoint](#Checkpoint)
 
-[[#CLIP]]
+[CLIP](#CLIP)
 
-[[#VAE]]
+[VAE](#VAE)
 
-#### ComfyUI
+### ComfyUI
 
 ComfyUI is a web-based Stable Diffusion interface designed to make process of image generation easy and accessible, allowing you to focus on creating without needing to worry about the technical details. You can experiment with different descriptions and settings to see how they change the resulting image, which can be a lot of fun and a great way to learn what Stable Diffusion can do.
 
-#### Checkpoint
+### Checkpoint
 
 In the context of using ComfyUI with a model like Stable Diffusion, a "checkpoint" typically refers to a specific saved version of the model that has been trained up to a certain point. These checkpoints capture the state of the model at that moment, including all its learned parameters and settings. Here's how they are used:
 
 1. **Choice of Style and Features**: Different checkpoints might be trained with different datasets, or to achieve different styles or levels of detail in the images they generate. By selecting a specific checkpoint in ComfyUI, you can influence the style, quality, and even the kind of content that the model produces.
 2. **Flexibility in Outputs**: Having multiple checkpoints available allows you to choose between them based on the specific needs of your project. For example, one checkpoint might be better for generating photorealistic images, while another might be optimized for artistic styles.
 
-#### CLIP
+### CLIP
 
 CLIP (Contrastive Language–Image Pre-training) plays a crucial role in understanding and generating images based on textual descriptions.
 
@@ -35,7 +35,7 @@ How CLIP is used in image generation:
 
 Overall, CLIP significantly enhances the capability of text-to-image models by bridging the gap between textual descriptions and visual content, making it easier to create accurate and relevant images from text inputs.
 
-#### VAE
+### VAE
 
 VAE (Variational Autoencoder) is a type of neural network used primarily for generating new data or for feature extraction. Here's a simple breakdown of how it works:
 
