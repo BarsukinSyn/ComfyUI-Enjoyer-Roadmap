@@ -27,7 +27,7 @@ How CLIP is used in image generation:
 2. **Refinement and Accuracy**: CLIP can also be used to refine the output of the image generation process. It evaluates whether the generated images are a good match for the text description and helps guide the model towards better accuracy, ensuring that the final image truly reflects the described content.
 3. **Search and Selection**: In some systems, CLIP can be used to search through a database of images to find those that best match a given text description. This can be useful for applications like photo retrieval based on textual queries.
 
-**Usage in ComfyUI:** In an interface like ComfyUI, CLIP might be integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
+**Usage in ComfyUI:** CLIP integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
 
 Overall, CLIP significantly enhances the capability of text-to-image models by bridging the gap between textual descriptions and visual content, making it easier to create accurate and relevant images from text inputs.
 
@@ -56,7 +56,7 @@ In machine learning, especially in models designed for tasks like image generati
 2. **Data Generation and Manipulation**: Once data is encoded in the latent space, it can be manipulated to alter the original data or generate entirely new data. For example, by moving around in the latent space of images, you can generate new images that combine features of existing ones, such as blending the styles of two different pictures.
 3. **Efficiency**: Operations in the latent space are typically more computationally efficient. Manipulating compressed representations is quicker and requires less computing power than operating on the full, detailed data.
 
-Latent image, in the context of generative models, refers to the intermediate representation of an image while it is being processed. This latent image is not the final image you see but a kind of blueprint that the model uses to construct or reconstruct the visible image.
+Latent image, in the context of generative models, refers to the intermediate representation of an image while it is being processed. This latent image is not the final image you see, but a kind of blueprint that the model uses to construct or reconstruct the visible image.
 
 ### Analogy of a Closet
 
@@ -67,5 +67,5 @@ In this analogy:
 - **Your Clothes**: These are like the individual data points (or images) that a machine learns from.
 - **The Closet**: This represents the latent space. It is a compact, organized representation of all the outfits (or images) you could potentially create.
 - **Creating a New Outfit**: When you pull various pieces from different parts of the closet to assemble a new outfit, it is like generating a new image from latent space.
-- **Mix and Match**: Sometimes, you might experiment by mixing and matching clothes in ways you haven't before, discovering new combinations that look great. This is akin to a model exploring parts of latent space that weren't previously utilized heavily, leading to new and creative outputs.
+- **Mix and Match**: Sometimes, you might experiment by mixing and matching clothes in ways you have not before, discovering new combinations that look great. This is akin to a model exploring parts of latent space that were not previously utilized heavily, leading to new and creative outputs.
 - **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
