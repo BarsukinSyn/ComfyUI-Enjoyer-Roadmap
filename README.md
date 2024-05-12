@@ -1,6 +1,6 @@
 # ComfyUI Enjoyer Roadmap 2024
 
-![A roadmap to ComfyUI enjoyment](thumbnail.png)
+![A roadmap to ComfyUI enjoyment](assets/thumbnail.png)
 
 ComfyUI Enjoyer Roadmap 2024 offers a structured approach to mastering image generation using ComfyUI with Stable Diffusion.
 
@@ -12,10 +12,10 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 
 - [Setup](#setup)
 
-**Let's start with basic learning**
+Let's start with basic learning
 
 ## Setup
 
 1. **Download and Install ComfyUI:** Visit the official [ComfyUI repository](https://github.com/comfyanonymous/ComfyUI) and download the latest version. Follow the installation instructions provided in the repository to install ComfyUI on your system.
-2. **Download Stable Diffusion Models:** Download the necessary checkpoints/models from [CivitAI](https://civitai.com/). These files are essential for generating images with ComfyUI.
-3. **Configure Checkpoints:** Place the downloaded checkpoint files into the 'checkpoints' folder as specified in the ComfyUI installation instructions. Ensure the files are correctly named and located as the software may not recognize them otherwise.
+2. **Download Stable Diffusion Models:** Download the necessary checkpoints or model files from [CivitAI](https://civitai.com/). These files are essential for generating images with ComfyUI.
+4. **Configure Checkpoints:** Place the downloaded checkpoint files into the 'checkpoints' folder as specified in the ComfyUI installation instructions. Ensure the files are correctly named and located as the software may not recognize them otherwise.
