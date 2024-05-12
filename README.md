@@ -13,8 +13,6 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
 
-**Let's get started** 🏄🏄‍♂️🏄‍♀️
-
 ## Initial Setup
 
 1. **Download and Install ComfyUI:** Visit the official <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank">ComfyUI repository</a> and download the latest version. Follow the installation instructions provided in the repository to install ComfyUI on your system.
