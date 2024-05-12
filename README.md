@@ -1,9 +1,9 @@
 # Terms and Definitions
 
-- [ComfyUI](#ComfyUI)
-- [Checkpoint](#Checkpoint)
-- [CLIP](#CLIP)
-- [VAE](#VAE)
+- [ComfyUI](#comfyui)
+- [Checkpoint](#checkpoint)
+- [CLIP](#clip)
+- [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
 - [Samplers and Schedulers](#samplers-and-schedulers)
 
