@@ -5,6 +5,7 @@
 - [CLIP](#CLIP)
 - [VAE](#VAE)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
+- [Samplers and Schedulers](#samplers-and-schedulers)
 
 ## ComfyUI
 
@@ -69,3 +70,22 @@ In this analogy:
 - **Creating a New Outfit**: When you pull various pieces from different parts of the closet to assemble a new outfit, it is like generating a new image from latent space.
 - **Mix and Match**: Sometimes, you might experiment by mixing and matching clothes in ways you have not before, discovering new combinations that look great. This is akin to a model exploring parts of latent space that were not previously utilized heavily, leading to new and creative outputs.
 - **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
+
+A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
+
+## Samplers and Schedulers
+
+In the context of machine learning for image generation, samplers and schedulers are pivotal. Samplers are algorithms that manage the step-by-step process of converting initial random noise into detailed, coherent images. They execute changes at each iteration to reduce noise and enhance image features. Schedulers, on the other hand, define the sequence and pace at which these transformations occur, regulating the noise reduction across the diffusion process. Mastery of these components is vital for effectively utilizing generative models to produce high-quality images from basic inputs.
+
+### How They Work together
+
+When generating an image:
+
+- **The scheduler sets the plan**, dictating how each step should proceed—think of it as setting up a timeline of which areas of the canvas to work on first.
+- **The sampler follows the plan**, applying the changes to the image. It is the hand that does the actual painting, following the guidelines laid out by the scheduler.
+
+### In Simple terms
+
+Imagine you are teaching a robot to paint a picture based on sketch. You give the robot a set of instructions on how to fill in the colors step by step (scheduler), and the robot follows these instructions to complete the painting (sampler).
+
+Together, the scheduler and the sampler turn a basic sketch into a detailed, finished painting, similar to how these models generate detailed images from basic input data.
