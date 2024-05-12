@@ -41,9 +41,9 @@ VAE (Variational Autoencoder) is a type of neural network used primarily for gen
 
 In the case of image generation models like Stable Diffusion, VAE is used for:
 
-- **Compression**: The VAE first compresses an image into a latent representation. This step involves understanding and capturing the core features of the image.
-- **Manipulation**: In the latent space, it is easier and more efficient to manipulate these features to change the image (e.g., making a face look older or changing the time of day in a photo).
-- **Reconstruction**: After manipulation, the VAE reconstructs the image from the latent space, incorporating the changes.
+1. **Compression**: The VAE first compresses an image into a latent representation. This step involves understanding and capturing the core features of the image.
+2. **Manipulation**: In the latent space, it is easier and more efficient to manipulate these features to change the image (e.g., making a face look older or changing the time of day in a photo).
+3. **Reconstruction**: After manipulation, the VAE reconstructs the image from the latent space, incorporating the changes.
 
 ## Latent Space and Latent Image
 
@@ -81,11 +81,11 @@ In the context of machine learning for image generation, samplers and schedulers
 
 When generating an image:
 
-- **The scheduler sets the plan**, dictating how each step should proceed—think of it as setting up a timeline of which areas of the canvas to work on first.
-- **The sampler follows the plan**, applying the changes to the image. It is the hand that does the actual painting, following the guidelines laid out by the scheduler.
+1. **The Scheduler Sets the Plan**: The scheduler organizes the process, outlining a clear sequence for transforming the initial noisy image. It determines the order in which different parts of the image should be refined—much like setting up a timeline that specifies when to focus on background details, when to define major elements, and when to add fine details. This strategic planning ensures that each phase of the transformation contributes effectively to building up the image complexity in a logical order.
+2. **The Sampler Follows the Plan**: Acting on the scheduler's blueprint, the sampler executes the actual modifications needed to develop the image. It applies changes precisely where needed, enhancing details, adjusting contrasts, and refining textures based on the progressive stages set out by the scheduler.
 
-### In Simple terms
+Together, the scheduler and sampler transform a vague, noisy start into a detailed and coherent final image. This collaboration ensures that the image generation process is both systematic and creative, leading to high-quality results.
+
+### In Simple Terms
 
 Imagine you are teaching a robot to paint a picture based on sketch. You give the robot a set of instructions on how to fill in the colors step by step (scheduler), and the robot follows these instructions to complete the painting (sampler).
-
-Together, the scheduler and the sampler turn a basic sketch into a detailed, finished painting, similar to how these models generate detailed images from basic input data.
