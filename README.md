@@ -13,7 +13,7 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
 
-Let's start 🚀
+**Let's get started** 🏄🏄‍♂️🏄‍♀️
 
 ## Initial Setup
 
