@@ -5,6 +5,7 @@
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
 - [Samplers and Schedulers](#samplers-and-schedulers)
+- [Latent Space and Latent Image](#Latent%20Space%20and%20Latent%20Image)
 
 ## Checkpoint
 
