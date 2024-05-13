@@ -17,7 +17,7 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 ## Initial Setup
 
 1. **Download and Install ComfyUI:** Visit the official <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank">ComfyUI repository</a> and download the latest version. Follow the installation instructions provided in the repository to install ComfyUI on your system.
-2. **Download Stable Diffusion Models:** \Download the necessary checkpoints or model files from <a href="https://civitai.com" target="_blank">CivitAI</a>. These files are essential for generating images using ComfyUI.
+2. **Download Stable Diffusion Models:** Download the necessary checkpoints or model files from <a href="https://civitai.com" target="_blank">CivitAI</a>. These files are essential for generating images using ComfyUI.
 3. **Configure Checkpoints:** Place the downloaded checkpoint files into the 'checkpoints' folder as specified in the ComfyUI installation instructions. Ensure the files are correctly named and located as the software may not recognize them otherwise.
 
 For additional assistance, YouTube tutorials offer step-by-step visual instructions on how to install and set up ComfyUI on your computer.
@@ -26,4 +26,4 @@ For additional assistance, YouTube tutorials offer step-by-step visual instructi
 
 1. **Launch ComfyUI:** Typically, you will start ComfyUI by running one of the provided batch files based on your hardware. Use `run_cpu.bat` for CPU setups or `run_nvidia_gpu.bat` for NVIDIA GPU configurations. Double-clicking these files starts ComfyUI in your web browser, allowing access to its interface for creating images. Alternate launch options may exist based on your setup.
 2. **Explore the Basic Workflow:** After launching ComfyUI, you will be greeted with a simple and intuitive workflow. Start by selecting your previously downloaded checkpoint in the 'Load Checkpoint' node. Once selected, press the 'Queue Prompt' button to begin generating your first image. If you encounter any issues or require further guidance, search YouTube for 'ComfyUI beginner guide' to find comprehensive tutorials.
-3. **Understand Terminology:** Familiarize yourself with key ComfyUI terminology to navigate and use the software more effectively. For a comprehensive list, check out the [Terms and Definitions](terms-and-definitions.md) section.
+3. **Understand the Terminology:** Familiarize yourself with key ComfyUI terminology to navigate and use the software more effectively. For a comprehensive list, check out the [Terms and Definitions](terms-and-definitions.md) section.
