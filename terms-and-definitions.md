@@ -4,7 +4,7 @@
 - [CLIP](#clip)
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
-- [Samplers and Schedulers](samplers-and-schedulers.md)
+- [Samplers and Schedulers](#samplers-and-schedulers)
 
 ## Checkpoint
 
@@ -67,3 +67,7 @@ In this analogy:
 - **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
 
 A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
+
+## Samplers and Schedulers
+
+Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity and importance of this topic, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
