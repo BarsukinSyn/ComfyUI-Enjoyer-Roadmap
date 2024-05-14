@@ -4,7 +4,7 @@
 - [CLIP](#clip)
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
-- [Samplers and Schedulers](#samplers-and-schedulers)
+- [Samplers and Schedulers](samplers-and-schedulers.md)
 
 ## Checkpoint
 
@@ -67,20 +67,3 @@ In this analogy:
 - **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
 
 A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
-
-## Samplers and Schedulers
-
-In the context of machine learning for image generation, samplers and schedulers are pivotal. Samplers are algorithms that manage the step-by-step process of converting initial random noise into detailed, coherent images. They execute changes at each iteration to reduce noise and enhance image features. Schedulers, on the other hand, define the sequence and pace at which these transformations occur, regulating the noise reduction across the diffusion process. Mastery of these components is vital for effectively utilizing generative models to produce high-quality images from basic inputs.
-
-### How They Work together
-
-When generating an image:
-
-1. **The Scheduler Sets the Plan**: The scheduler organizes the process, outlining a clear sequence for transforming the initial noisy image. It determines the order in which different parts of the image should be refined—much like setting up a timeline that specifies when to focus on background details, when to define major elements, and when to add fine details. This strategic planning ensures that each phase of the transformation contributes effectively to building up the image complexity in a logical order.
-2. **The Sampler Follows the Plan**: Acting on the scheduler's blueprint, the sampler executes the actual modifications needed to develop the image. It applies changes precisely where needed, enhancing details, adjusting contrasts, and refining textures based on the progressive stages set out by the scheduler.
-
-Together, the scheduler and sampler transform a vague, noisy start into a detailed and coherent final image. This collaboration ensures that the image generation process is both systematic and creative, leading to high-quality results.
-
-### In Simple Terms
-
-Imagine you are teaching a robot to paint a picture based on sketch. You give the robot a set of instructions on how to fill in the colors step by step (scheduler), and the robot follows these instructions to complete the painting (sampler).
