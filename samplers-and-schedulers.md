@@ -39,14 +39,14 @@ Each family is designed to optimize different aspects of the image generation pr
 - **Samplers**: `dpm_2`, `dpm_2_ancestral`, `dpm_fast`, `dpm_adaptive`
 - **Strengths**: Good balance between quality and efficiency, suitable for a variety of image generation tasks where enhanced detail is needed but extreme precision is not critical.
 - **Weaknesses**: While they offer improved detail over simpler methods, they are generally slower than methods like Euler and may not handle the most complex textures as well as their enhanced counterparts.
-- **Best for**: Generating high-quality images where detail and texture fidelity are important. Ideal for artistic applications, such as creating digital art or enhancing photographs, where subtle details are valuable.
+- **Best for**: **???**
 
 ### Enhanced Diffusion Probabilistic Models
 
 - **Samplers**: `dpmpp_2s_ancestral`, `dpmpp_sde`, `dpmpp_sde_gpu`, `dpmpp_2m`, `dpmpp_2m_sde`, `dpmpp_2m_sde_gpu`, `dpmpp_3m_sde`, `dpmpp_3m_sde_gpu`
-- **Strengths**: Enhanced image quality with finer details and better handling of complex textures or patterns.
-- **Weaknesses**: Generally slower than simpler methods like Euler due to the complexity of calculations and the higher number of timesteps typically involved.
-- **Best for**: Advanced image creation tasks requiring high-resolution and intricate details. These samplers are suitable for professional-grade uses, including high-end visual content production and detailed texture design.
+- **Strengths**: They are capable of producing very high-quality images with exceptional detail and accuracy, making them ideal for high-resolution and professional-grade applications.
+- **Weaknesses**: The complexity of these models results in slower performance compared to simpler samplers, and they require more computational resources.
+- **Best for**: Complex and high-stakes image generation tasks. They excel in producing high-resolution and photorealistic images, making them perfect for creating detailed digital art and realistic textures.
 
 ### Denoising Diffusion Implicit Models
 
