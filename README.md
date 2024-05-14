@@ -12,8 +12,8 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
-- [Terms and Definitions](terms-and-definitions.md)
-- [Samplers and Schedulers](samplers-and-schedulers.md)
+	- [Terms and Definitions](terms-and-definitions.md)
+	- [Samplers and Schedulers](samplers-and-schedulers.md)
 
 ## Initial Setup
 
