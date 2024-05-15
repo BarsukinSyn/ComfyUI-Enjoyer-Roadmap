@@ -79,4 +79,11 @@ Balancing speed and quality depends on the specific tasks and the acceptable tra
 
 ## Schedulers
 
-What can you say about these schedulers? normal, karras, exponential, sgm_uniform, simple, ddim_uniform
+In ComfyUI, you have several scheduler options, each with its own approach to managing the diffusion process. Here is a brief overview of each to help you understand their differences and potential uses:
+
+1. **Normal**: Closely follows the original implementation of the diffusion model. It is generally a good balance between image quality and generation time, suitable for most general purposes.
+2. **Karras**: Optimizes image generation for speed and quality, focusing on enhanced denoising for clearer, more detailed images.
+3. **Exponential**: Intensifies noise reduction exponentially across steps, dramatically enhancing image clarity and detail, especially in complex images.
+4. **SGM Uniform**: Designed to simplify the progression of noise reduction, potentially leading to faster processing times but possibly at the cost of some image detail or smoothness.
+5. **Simple**: Developed by the ComfyUI creator as an experiment for a straightforward scheduler. It has shown effectiveness in specific scenarios, such as during the second pass of HiRes.Fix.
+6. **DDIM Uniform**: Supposed to be used with `ddim` sampler. Maintains a balance between speed and image quality, making it a reliable choice for a wide range of tasks.
