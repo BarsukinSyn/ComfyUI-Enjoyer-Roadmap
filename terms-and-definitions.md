@@ -23,7 +23,7 @@ How CLIP is used in image generation:
 2. **Refinement and Accuracy**: CLIP can also be used to refine the output of the image generation process. It evaluates whether the generated images are a good match for the text description and helps guide the model towards better accuracy, ensuring that the final image truly reflects the described content.
 3. **Search and Selection**: In some systems, CLIP can be used to search through a database of images to find those that best match a given text description. This can be useful for applications like photo retrieval based on textual queries.
 
-**Usage in ComfyUI:** CLIP integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
+**Usage in ComfyUI**: CLIP integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
 
 Overall, CLIP significantly enhances the capability of text-to-image models by bridging the gap between textual descriptions and visual content, making it easier to create accurate and relevant images from text inputs.
 
