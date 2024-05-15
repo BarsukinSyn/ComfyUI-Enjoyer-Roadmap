@@ -81,7 +81,7 @@ Balancing speed and quality depends on the specific tasks and the acceptable tra
 
 In ComfyUI, you have several scheduler options, each with its own approach to managing the diffusion process. Here is a brief overview of each to help you understand their differences and potential uses:
 
-1. **Normal**: Closely follows the original implementation of the diffusion model. It is generally a good balance between image quality and generation time, suitable for most general purposes.
+1. **Normal**: Provides a balance between speed and quality. Intended for general use cases that require reliable output without specific adjustments for speed or hyper-realistic details.
 2. **Karras**: Optimizes image generation for speed and quality, focusing on enhanced denoising for clearer, more detailed images.
 3. **Exponential**: Intensifies noise reduction exponentially across steps, dramatically enhancing image clarity and detail, especially in complex images.
 4. **SGM Uniform**: Designed to simplify the progression of noise reduction, potentially leading to faster processing times but possibly at the cost of some image detail or smoothness.
