@@ -39,7 +39,7 @@ Each family is designed to optimize different aspects of the image generation pr
 - **Samplers**: `dpm_2`, `dpm_2_ancestral`, `dpm_fast`, `dpm_adaptive`
 - **Strengths**: Good balance between quality and efficiency, suitable for a variety of image generation tasks where enhanced detail is needed but extreme precision is not critical.
 - **Weaknesses**: While they offer improved detail over simpler methods, they are generally slower than methods like Euler and may not handle the most complex textures as well as their enhanced counterparts.
-- **Best for**: **???**
+- **Best for**: Tasks involving generating high-quality images. They provide good detail but may not reach the highest levels of texture complexity that more advanced models can.
 
 ### Enhanced Diffusion Probabilistic Models
 
@@ -60,7 +60,7 @@ Each family is designed to optimize different aspects of the image generation pr
 - **Samplers**: `lms`, `lcm`
 - **Strengths**: They can produce high-quality images with intricate details, suitable for high-resolution tasks.
 - **Weaknesses**: The computational demand is high, making them slower and more resource-intensive.
-- **Best for**: Task demanding ultra-high fidelity and precision, particularly where technical accuracy and detailed corrections are essential, such as in scientific visualizations and high-resolution enhancements.
+- **Best for**: Tasks demanding ultra-high fidelity and precision, particularly where technical accuracy and detailed corrections are essential, such as in scientific visualizations and high-resolution enhancements.
 
 ### Unified Predictor-Corrector
 
