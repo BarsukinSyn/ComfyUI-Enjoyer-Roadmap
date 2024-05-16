@@ -69,14 +69,6 @@ Each family is designed to optimize different aspects of the image generation pr
 - **Weaknesses**: Might be more complex to tune due to the dual nature of the method.
 - **Best for**: Tasks requiring better image quality while still maintaining reasonable processing times. They manage to reduce artifacts better than simpler methods like Euler and maintain faster processing times compared to more complex algorithms.
 
-## Impact of Step Count
-
-In Stable Diffusion, various samplers are employed to generate images by guiding the model through a series of steps, transitioning from pure noise to a coherent image. The number of steps significantly influences the output quality, computational time, and the stylistic traits of the resulting image, such as texture smoothness and edge definition.
-
-Generally, increasing the number of steps enhances image quality, as it allows more iterations for the model to refine and adjust the noise-to-image transformation. However, this improvement comes at the cost of longer generation times and potentially higher computational demands, depending on the sampler and hardware used.
-
-Balancing speed and quality depends on the specific tasks and the acceptable trade-offs in terms of performance and output fidelity. Different samplers, such as `dpm_fast` or `dpm_adaptive`, may be optimized to work efficiently with fewer steps, thus offering unique balances between speed and image quality.
-
 ## Schedulers
 
 In ComfyUI, you have several scheduler options, each with its own approach to managing the diffusion process. Here is a brief overview of each to help you understand their differences and potential uses:
@@ -87,3 +79,11 @@ In ComfyUI, you have several scheduler options, each with its own approach to ma
 4. **SGM Uniform**: Designed to simplify the progression of noise reduction, potentially leading to faster processing times but possibly at the cost of some image detail or smoothness.
 5. **Simple**: Developed by the ComfyUI creator as an experiment for a straightforward scheduler. It has shown effectiveness in specific scenarios, such as during the second pass of HiRes.Fix.
 6. **DDIM Uniform**: Supposed to be used with `ddim` sampler if you want it to behave exactly like in the reference Stable Diffusion implementation.
+
+## Impact of Step Count
+
+In Stable Diffusion, various samplers are employed to generate images by guiding the model through a series of steps, transitioning from pure noise to a coherent image. The number of steps significantly influences the output quality, computational time, and the stylistic traits of the resulting image, such as texture smoothness and edge definition.
+
+Generally, increasing the number of steps enhances image quality, as it allows more iterations for the model to refine and adjust the noise-to-image transformation. However, this improvement comes at the cost of longer generation times and potentially higher computational demands, depending on the sampler and hardware used.
+
+Balancing speed and quality depends on the specific tasks and the acceptable trade-offs in terms of performance and output fidelity. Different samplers, such as `dpm_fast` or `dpm_adaptive`, may be optimized to work efficiently with fewer steps, thus offering unique balances between speed and image quality.
