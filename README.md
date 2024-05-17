@@ -13,7 +13,6 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
 	- [Terms and Definitions](terms-and-definitions.md)
-	- [Samplers and Schedulers](samplers-and-schedulers.md)
 
 ## Initial Setup
 
@@ -25,5 +24,5 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 
 1. **Launch ComfyUI**: Typically, you will start ComfyUI by running one of the provided batch files based on your hardware. Use `run_cpu.bat` for CPU setups or `run_nvidia_gpu.bat` for NVIDIA GPU configurations. Double-clicking these files starts ComfyUI in your web browser, allowing access to its interface for creating images. Alternate launch options may exist based on your setup.
 2. **Explore the Basic Workflow**: After launching ComfyUI, you will be greeted with a simple and intuitive workflow. Start by selecting your previously downloaded checkpoint in the 'Load Checkpoint' node. Once selected, press the 'Queue Prompt' button to begin generating your first image. If you encounter any issues or require further guidance, search YouTube for 'ComfyUI beginner guide' to find comprehensive tutorials.
-3. **Understand the Terminology**: It is important to familiarize yourself with key ComfyUI terminology to effectively navigate and utilize the software. For a comprehensive list of terms, please refer to the [Terms and Definitions](terms-and-definitions.md) section. Pay special attention to [Samplers and Schedulers](samplers-and-schedulers.md), as they significantly influence your image generation results.
+3. **Understand the Terminology**: It is important to familiarize yourself with key ComfyUI terminology to effectively navigate and utilize the software. For a comprehensive list of terms, please refer to the [Terms and Definitions](terms-and-definitions.md) section.
 4. **Experiment and Engage**: Explore different prompts and models in ComfyUI to see how they affect image outcomes. Enhance your skills and stay updated by subscribing to relevant YouTube channels.

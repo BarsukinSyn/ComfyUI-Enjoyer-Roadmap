@@ -70,4 +70,4 @@ A latent image can be seen as a specific outfit laid out on your bed, not yet wo
 
 ## Samplers and Schedulers
 
-Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity and importance of this topic, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
+Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
