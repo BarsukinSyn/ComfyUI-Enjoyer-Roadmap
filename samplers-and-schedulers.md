@@ -2,7 +2,25 @@
 
 In the context of machine learning for image generation, samplers and schedulers are pivotal. Samplers are algorithms that manage the step-by-step process of converting initial random noise into detailed, coherent images. They execute changes at each iteration to reduce noise and enhance image features. Schedulers, on the other hand, define the sequence and pace at which these transformations occur, regulating the noise reduction across the diffusion process. Mastery of these components is vital for effectively utilizing generative models to produce high-quality images from basic inputs.
 
-## How They Work together
+## Table of Contents
+
+- [How They Work Together](#how-they-work-together)
+	- [In Simple Terms](#in-simple-terms)
+- [Samplers](#samplers)
+	- [Euler](#euler)
+	- [Diffusion Probabilistic Models](#diffusion-probabilistic-models)
+	- [Enhanced Diffusion Probabilistic Models](#enhanced-diffusion-probabilistic-models)
+	- [Denoising Diffusion Implicit Models](#denoising-diffusion-implicit-models)
+	- [Langevin and Corrector Methods](#langevin-and-corrector-methods)
+	- [Unified Predictor-Corrector](#unified-predictor-corrector)
+- [Schedulers](#schedulers)
+- [Best Combination of Sampler and Scheduler](#best-combination-of-sampler-and-scheduler)
+	- [Model Compatibility with Samplers](#model-compatibility-with-samplers)
+	- [Optimal Setups for Beginning](#optimal-setups-for-beginning)
+- [Impact of Step Count](#impact-of-step-count)
+	- [Optimize Results, Not Just Steps](#optimize-results-not-just-steps)
+
+## How They Work Together
 
 When generating an image:
 
@@ -80,11 +98,19 @@ In ComfyUI, you have several scheduler options, each with its own approach to ma
 5. **Simple**: Developed by the ComfyUI creator as an experiment for a straightforward scheduler. It has shown effectiveness in specific scenarios, such as during the second pass of HiRes.Fix.
 6. **DDIM Uniform**: Supposed to be used with `ddim` sampler if you want it to behave exactly like in the reference Stable Diffusion implementation.
 
-\>> ### Добавить абзац об комбинировании шедулеров и сэмплеров ### <<
+## Best Combination of Sampler and Scheduler
 
-\>> ### Некоторые модели лучше оптимизированы под определенный сэмплер ### <<
+Instead of seeking a universal solution, it is more practical to start by understanding your specific requirements. Factors such as the desired image quality, generation speed, and particular style influences should guide your choice of sampler and scheduler.
 
-\>> ### Базовый совет ### <<
+Remember, the strength of ComfyUI lies in its adaptability. Leverage this by creating a well-planned workflow that includes testing and adjustments based on the outcomes you achieve. This method ensures that you fully utilize the potential of the technology, tailored to meet your artistic or practical objectives.
+
+### Model Compatibility with Samplers
+
+When selecting a checkpoint, be aware that some are optimized for specific samplers to enhance performance and image quality. Always review the description on each model's page before downloading and using it. Employing the recommended sampler can significantly boost the effectiveness of your image generation process.
+
+### Optimal Setups for Beginning
+
+If you are new to ComfyUI, start with two key setups. For rapid prototyping without losing much quality, use the `euler` sampler and `normal` scheduler. For projects needing high-resolution, detailed images, choose the `dpmpp_2m` sampler and `karras` scheduler for optimal image quality. These setups offer a solid base to adjust and refine your workflow.
 
 ## Impact of Step Count
 
@@ -92,7 +118,11 @@ In Stable Diffusion, various samplers guide the model through a series of steps,
 
 While increasing the number of steps typically enhances image quality by allowing more iterations for refinement, this also results in longer generation times and higher computational demands, depending on the sampler and hardware used.
 
-\>> ### Вставить картинки ### <<
+Here you can see a comparison of results using the <a href="https://civitai.com/models/249973/imaginarium" target="_blank">Imaginarium</a> model with the `euler` sampler and `normal` scheduler, based on step count, which highlights differences in image quality.
+
+| 10  | 20  | 30  | 50  | 100 |
+| --- | --- | --- | --- | --- |
+|     |     |     |     |     |
 
 ### Optimize Results, Not Just Steps
 
