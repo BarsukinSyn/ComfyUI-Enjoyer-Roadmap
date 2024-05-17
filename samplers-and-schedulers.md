@@ -80,12 +80,20 @@ In ComfyUI, you have several scheduler options, each with its own approach to ma
 5. **Simple**: Developed by the ComfyUI creator as an experiment for a straightforward scheduler. It has shown effectiveness in specific scenarios, such as during the second pass of HiRes.Fix.
 6. **DDIM Uniform**: Supposed to be used with `ddim` sampler if you want it to behave exactly like in the reference Stable Diffusion implementation.
 
+\>> ### Добавить абзац об комбинировании шедулеров и сэмплеров ### <<
+
+\>> ### Некоторые модели лучше оптимизированы под определенный сэмплер ### <<
+
+\>> ### Базовый совет ### <<
+
 ## Impact of Step Count
 
 In Stable Diffusion, various samplers guide the model through a series of steps, transitioning from pure noise to a coherent image. The number of steps plays a crucial role in determining the output quality, computational time, and stylistic traits such as texture smoothness and edge definition.
 
 While increasing the number of steps typically enhances image quality by allowing more iterations for refinement, this also results in longer generation times and higher computational demands, depending on the sampler and hardware used.
 
+\>> ### Вставить картинки ### <<
+
 ### Optimize Results, Not Just Steps
 
-Step count is important in image generation with Stable Diffusion, but it should not be the sole focus, particularly in advanced workflows. The quality of the final image is often more effectively improved by upscalers and refiners. Upscalers enhance resolution and detail, while refiners enhance textures and edges. These tools can achieve high-quality results more efficiently than merely increasing the number of steps, optimizing the use of computational resources.
+Step count is important in image generation with Stable Diffusion, but it should not be the sole focus, particularly in advanced ComfyUI workflows. The quality of the final image is often more effectively improved by upscalers and refiners. Upscalers enhance resolution and detail, while refiners enhance textures and edges. These tools can achieve high-quality results more efficiently than merely increasing the number of steps, optimizing the use of computational resources.
