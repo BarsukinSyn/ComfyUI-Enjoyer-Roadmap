@@ -118,12 +118,6 @@ In Stable Diffusion, various samplers guide the model through a series of steps,
 
 While increasing the number of steps typically enhances image quality by allowing more iterations for refinement, this also results in longer generation times and higher computational demands, depending on the sampler and hardware used.
 
-Here you can see a comparison of results using the <a href="https://civitai.com/models/249973/imaginarium" target="_blank">Imaginarium</a> model with the `euler` sampler and `normal` scheduler, based on step count, which highlights differences in image quality.
-
-| 10  | 20  | 30  | 50  | 100 |
-| --- | --- | --- | --- | --- |
-|     |     |     |     |     |
-
 ### Optimize Results, Not Just Steps
 
 Step count is important in image generation with Stable Diffusion, but it should not be the sole focus, particularly in advanced ComfyUI workflows. The quality of the final image is often more effectively improved by upscalers and refiners. Upscalers enhance resolution and detail, while refiners enhance textures and edges. These tools can achieve high-quality results more efficiently than merely increasing the number of steps, optimizing the use of computational resources.
