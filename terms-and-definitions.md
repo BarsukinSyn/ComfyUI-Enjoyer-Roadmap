@@ -5,7 +5,9 @@
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
 - [Samplers and Schedulers](#samplers-and-schedulers)
+- [Seed](#seed)
 - [CFG](#cfg)
+- [Clip Skip](#clip-skip)
 
 ## Checkpoint
 
@@ -73,8 +75,24 @@ A latent image can be seen as a specific outfit laid out on your bed, not yet wo
 
 Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
 
+## Seed
+
+Seed is a specific value used to initialize the random number generator that controls the generation of images. This seed plays a crucial role in ensuring the reproducibility of results when generating images. Here is a breakdown of its purpose and implications:
+
+1. **Reproducibility**: By using the same seed value, you can generate the same image multiple times. This is useful for consistency across different sessions or when sharing specific generative settings with others.
+2. **Control and Experimentation**: Seeds allow you to experiment systematically with variations in the output. By changing the seed, you can explore different visual outcomes while keeping other parameters (like the prompt or model settings) constant.
+3. **Consistency Across Different Runs**: When you use a seed, you ensure that the randomness in the image generation process is controlled. This allows you to make more meaningful comparisons between different model parameters or settings, as the only variable changing is the one you are testing.
+
+Seed in Stable Diffusion acts like a starting point for the algorithm to begin its process of image generation, ensuring that this starting point is consistent every time it is used with the same seed.
+
 ## CFG
-  
+
 CFG (Classifier-Free Guidance) is a technique used to enhance the alignment between the generated images and the textual prompts guiding the generation. This method operates by running the model in two modes during the inference: one mode uses the text input to direct the image creation, and the other does not. By comparing the outputs from these two modes, the model can be steered to produce results that more closely match the text.
 
 The effectiveness of CFG is controlled by a "guidance scale" or "guidance weight," which adjusts how strongly the text influences the image generation. Increasing this scale tends to produce images that are more relevant and detailed according to the prompt, but setting it too high might lead to artifacts or overly literal interpretations. This feature is particularly valuable in tasks where precise adherence to textual descriptions is critical.
+
+## Clip Skip
+
+Clip skip is technique that optimizes the image generation process by reducing the number of times the CLIP model evaluates the image's alignment with the text prompt during the diffusion steps. Since CLIP (Contrastive Language-Image Pre-training) evaluations can be computationally expensive, skipping some of these checks can significantly speed up the generation process while generally maintaining a satisfactory alignment between the generated image and the text description.
+
+The challenge with implementing "clip skip" effectively is to balance computational efficiency with image quality. By strategically choosing when to perform these evaluations, one can minimize resource usage without greatly compromising the fidelity of the image to the textual prompt. This approach is especially valuable in scenarios where quick generation is prioritized, or computational resources are limited.
