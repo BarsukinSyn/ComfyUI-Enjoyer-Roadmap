@@ -5,6 +5,7 @@
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
 - [Samplers and Schedulers](#samplers-and-schedulers)
+- [CFG](#cfg)
 
 ## Checkpoint
 
@@ -71,3 +72,9 @@ A latent image can be seen as a specific outfit laid out on your bed, not yet wo
 ## Samplers and Schedulers
 
 Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
+
+## CFG
+  
+CFG (Classifier-Free Guidance) is a technique used to enhance the alignment between the generated images and the textual prompts guiding the generation. This method operates by running the model in two modes during the inference: one mode uses the text input to direct the image creation, and the other does not. By comparing the outputs from these two modes, the model can be steered to produce results that more closely match the text.
+
+The effectiveness of CFG is controlled by a "guidance scale" or "guidance weight," which adjusts how strongly the text influences the image generation. Increasing this scale tends to produce images that are more relevant and detailed according to the prompt, but setting it too high might lead to artifacts or overly literal interpretations. This feature is particularly valuable in tasks where precise adherence to textual descriptions is critical.
