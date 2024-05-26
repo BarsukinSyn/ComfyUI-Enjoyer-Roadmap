@@ -13,6 +13,8 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
 	- [Terms and Definitions](terms-and-definitions.md)
+- [Mastering Advanced Configuration](#mastering-advanced-configuration)
+	- [Customizing Settings](#customizing-settings)
 
 ## Initial Setup
 
@@ -25,4 +27,16 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 1. **Launch ComfyUI**: Typically, you will start ComfyUI by running one of the provided batch files based on your hardware. Use `run_cpu.bat` for CPU setups or `run_nvidia_gpu.bat` for NVIDIA GPU configurations. Double-clicking these files starts ComfyUI in your web browser, allowing access to its interface for creating images. Alternate launch options may exist based on your setup.
 2. **Explore the Basic Workflow**: After launching ComfyUI, you will be greeted with a simple and intuitive workflow. Start by selecting your previously downloaded checkpoint in the 'Load Checkpoint' node. Once selected, press the 'Queue Prompt' button to begin generating your first image. If you encounter any issues or require further guidance, search YouTube for 'ComfyUI beginner guide' to find comprehensive tutorials.
 3. **Understand the Terminology**: It is important to familiarize yourself with key ComfyUI terminology to effectively navigate and utilize the software. For a comprehensive list of terms, please refer to the [Terms and Definitions](terms-and-definitions.md) section.
-4. **Experiment and Engage**: Explore different prompts and models in ComfyUI to see how they affect image outcomes. Enhance your skills and stay updated by subscribing to relevant YouTube channels.
+
+## Mastering Advanced Configuration
+
+As you become more familiar with ComfyUI, you can further enhance your experience by exploring advanced settings and features. These tools are designed to fine-tune your outputs, optimize performance, and expand the range of creative possibilities.
+
+### Customizing Settings
+
+ComfyUI allows you to deeply customize your image generation process. By experimenting with different settings, you can discover the perfect balance for your specific needs. This creative exploration not only enhances your understanding but also dramatically influences your results.
+
+1. **Different Checkpoints**: Various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is key for aligning outputs with your creative vision.
+2. **Different Samplers and Schedulers**: Different samplers and schedulers can influence the nuances of your generated images, affecting texture and edge handling.
+3. **Number of Steps**: The number of diffusion steps affects image clarity and detail. Fewer steps can yield quicker, more abstract results, while more steps enhance clarity and detail. Adjust the steps to find the ideal balance for your needs.
+4. **Up and Down Weighting**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
