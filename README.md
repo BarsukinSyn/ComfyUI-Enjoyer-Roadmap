@@ -28,15 +28,18 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 2. **Explore the Basic Workflow**: After launching ComfyUI, you will be greeted with a simple and intuitive workflow. Start by selecting your previously downloaded checkpoint in the 'Load Checkpoint' node. Once selected, press the 'Queue Prompt' button to begin generating your first image. If you encounter any issues or require further guidance, search YouTube for 'ComfyUI beginner guide' to find comprehensive tutorials.
 3. **Understand the Terminology**: It is important to familiarize yourself with key ComfyUI terminology to effectively navigate and utilize the software. For a comprehensive list of terms, please refer to the [Terms and Definitions](terms-and-definitions.md) section.
 
-## Mastering Advanced Configuration
+## Master Advanced Configuration
 
 As you become more familiar with ComfyUI, you can further enhance your experience by exploring advanced settings and features. These tools are designed to fine-tune your outputs, optimize performance, and expand the range of creative possibilities.
 
-### Customizing Settings
+### Customize Settings
 
-ComfyUI allows you to deeply customize your image generation process. By experimenting with different settings, you can discover the perfect balance for your specific needs. This creative exploration not only enhances your understanding but also dramatically influences your results.
+ComfyUI allows you to deeply customize your image generation process. For example:
 
 1. **Different Checkpoints**: Various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is key for aligning outputs with your creative vision.
 2. **Different Samplers and Schedulers**: Explore the impact of different samplers and schedulers on image texture and edge definition.
-3. **Number of Steps**: The number of diffusion steps affects image clarity and detail. Fewer steps can yield quicker, more abstract results, while more steps enhance clarity and detail. Adjust the steps to find the ideal balance for your needs.
-4. **Prompt Emphasis**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
+3. **Number of Steps**: The number of diffusion steps affects image clarity and detail. Fewer steps can yield quicker, more abstract results, while more steps enhance clarity and detail.
+4. **CFG Scale**: CFG helps control how closely the image matches the text prompt. A higher CFG scale produces images more faithful to the prompt, while a lower scale allows for more creative variations.
+5. **Prompt Emphasis**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
+
+Feel free to experiment with different settings in ComfyUI. Exploring these options can lead to unexpected results and help you understand the capabilities of the tool. Allow yourself to explore and see what you can create.

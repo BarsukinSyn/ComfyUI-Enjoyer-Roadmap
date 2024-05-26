@@ -83,7 +83,7 @@ In Stable Diffusion, a "prompt" is the text description provided to the model to
 
 You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
 
-To include literal brackets in your prompt, you must escape them. For instance, if you want to reference the year in a prompt, you would write it as "\\(1984\\)".
+To include literal brackets in your prompt, you must escape them. For instance, if you want to reference the year in a prompt, you would write it as "\\(2007\\)".
 
 Additionally, ComfyUI offers shortcuts for adjusting weights quickly. Using the `Ctrl+Up` and `Ctrl+Down` keybindings, you can modify the weight of specific prompt elements directly.
 
