@@ -81,7 +81,7 @@ In Stable Diffusion, a "prompt" is the text description provided to the model to
 
 ### Prompt Emphasis
 
-You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Nesting weights, like "((flowers:1.2):0.5)", modifies the emphasis further. Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
+You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
 
 ## Samplers and Schedulers
 
