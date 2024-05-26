@@ -13,8 +13,8 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Initial Setup](#initial-setup)
 - [Learn the Basics](#learn-the-basics)
 	- [Terms and Definitions](terms-and-definitions.md)
-- [Mastering Advanced Configuration](#mastering-advanced-configuration)
-	- [Customizing Settings](#customizing-settings)
+- [Master Advanced Configuration](#master-advanced-configuration)
+	- [Customize Settings](#customize-settings)
 
 ## Initial Setup
 
