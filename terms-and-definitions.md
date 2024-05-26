@@ -4,6 +4,10 @@
 - [CLIP](#clip)
 - [VAE](#vae)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
+	- [Why it is Important](#why-it-is-important)
+	- [Analogy of a Closet](#analogy-of-a-closet)
+- [Prompt](#prompt)
+	- [Prompt Emphasis](#prompt-emphasis)
 - [Samplers and Schedulers](#samplers-and-schedulers)
 - [Seed](#seed)
 - [CFG](#cfg)
@@ -70,6 +74,14 @@ In this analogy:
 - **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
 
 A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
+
+## Prompt
+
+In Stable Diffusion, a "prompt" is the text description provided to the model to generate an image. It acts as instructions for what the image should depict, ranging from broad concepts to detailed descriptions that include specific elements like mood, style, and colors. The effectiveness of the generated image often depends on the clarity and detail of the prompt.
+
+### Prompt Emphasis
+
+You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Nesting weights, like "((flowers:1.2):0.5)", modifies the emphasis further. Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
 
 ## Samplers and Schedulers
 
