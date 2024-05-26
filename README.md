@@ -36,7 +36,7 @@ As you become more familiar with ComfyUI, you can further enhance your experienc
 
 ComfyUI allows you to deeply customize your image generation process. By experimenting with different settings, you can discover the perfect balance for your specific needs. This creative exploration not only enhances your understanding but also dramatically influences your results.
 
-1. **Different Checkpoints**: Various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is key for aligning outputs with your creative vision.
-2. **Different Samplers and Schedulers**: Different samplers and schedulers can influence the nuances of your generated images, affecting texture and edge handling.
+1. **Different Checkpoints**: Explore how various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is crucial for aligning outputs with your creative vision.
+2. **Different Samplers and Schedulers**: Explore the impact of different samplers and schedulers on image texture and edge definition.
 3. **Number of Steps**: The number of diffusion steps affects image clarity and detail. Fewer steps can yield quicker, more abstract results, while more steps enhance clarity and detail. Adjust the steps to find the ideal balance for your needs.
 4. **Up and Down Weighting**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
