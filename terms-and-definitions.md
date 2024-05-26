@@ -83,6 +83,10 @@ In Stable Diffusion, a "prompt" is the text description provided to the model to
 
 You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
 
+To include literal brackets in your prompt, you must escape them. For instance, if you want to reference the year in a prompt, you would write it as "\(1984\)".
+
+Additionally, ComfyUI offers shortcuts for adjusting weights quickly. Using the `Ctrl+Up` and `Ctrl+Down` keybindings, you can modify the weight of specific prompt elements directly.
+
 ## Samplers and Schedulers
 
 Samplers and schedulers are key elements in the image generation process, playing a crucial role in how images are created and refined. Due to the complexity, a separate page has been dedicated to cover it in detail. Please refer to the [Samplers and Schedulers](samplers-and-schedulers.md) section for a comprehensive explanation of their features, pros and cons, and various use cases.
