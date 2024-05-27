@@ -34,7 +34,7 @@ As you become more familiar with ComfyUI, you can further enhance your experienc
 
 ### Customize Settings
 
-ComfyUI allows you to deeply customize your image generation process. For example:
+ComfyUI allows you to deeply customize your image generation process.
 
 1. **Different Checkpoints**: Various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is key for aligning outputs with your creative vision.
 2. **Different Samplers and Schedulers**: Explore the impact of different samplers and schedulers on image texture and edge definition.
@@ -43,3 +43,12 @@ ComfyUI allows you to deeply customize your image generation process. For exampl
 5. **Prompt Emphasis**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
 
 Feel free to experiment with different settings in ComfyUI. Exploring these options can lead to unexpected results and help you understand the capabilities of the tool. Allow yourself to explore and see what you can create.
+
+### Enhance Image Generation Workflow
+
+ComfyUI provides several advanced tools to further refine and enhance your image generation process. Each tool targets different aspects of the generation process, allowing for a comprehensive enhancement of both quality and specificity.
+
+1. **Latent Upscaler**: Increases the resolution of your generated images. The upscaler works within the latent space to enhance details that are often lost in traditional upscaling methods.
+2. **Image to Image Painting**: Enables modifying an existing image using new prompts, making it suitable for both gradual refinements and specific adjustments without starting anew.
+3. **Masking**: Allows designating specific areas of an image to remain unchanged or to be altered, enabling seamless integration of new elements with existing parts.
+4. **Model Switch**: ComfyUI supports switching between different models during the generation process, enabling the combination of various models' strengths for unique effects. This feature facilitates using one model for basic layouts and another for detailed texturing or final enhancements.
