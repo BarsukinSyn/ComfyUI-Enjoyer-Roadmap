@@ -15,6 +15,7 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 	- [Terms and Definitions](terms-and-definitions.md)
 - [Master Advanced Configuration](#master-advanced-configuration)
 	- [Customize Settings](#customize-settings)
+	- [Enhance Workflow](#enhance-workflow)
 
 ## Initial Setup
 
@@ -44,7 +45,7 @@ ComfyUI allows you to deeply customize your image generation process.
 
 Feel free to experiment with different settings in ComfyUI. Exploring these options can lead to unexpected results and help you understand the capabilities of the tool. Allow yourself to explore and see what you can create.
 
-### Enhance Image Generation Workflow
+### Enhance Workflow
 
 ComfyUI provides several advanced tools to further refine and enhance your image generation process. Each tool targets different aspects of the generation process, allowing for a comprehensive enhancement of both quality and specificity.
 
