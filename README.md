@@ -52,4 +52,3 @@ ComfyUI provides several advanced tools to further refine and enhance your image
 1. **Latent Upscaler**: Increases the resolution of your generated images. The upscaler works within the latent space to enhance details that are often lost in traditional upscaling methods.
 2. **Image to Image Painting**: Enables modifying an existing image using new prompts, making it suitable for both gradual refinements and specific adjustments without starting anew.
 3. **Masking**: Allows designating specific areas of an image to remain unchanged or to be altered, enabling seamless integration of new elements with existing parts.
-4. **Model Switch**: ComfyUI supports switching between different models during the generation process, enabling the combination of strengths from various models for unique effects. This feature facilitates using one model for basic layouts and another for detailed texturing or final enhancements.
