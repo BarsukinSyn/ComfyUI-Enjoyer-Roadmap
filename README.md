@@ -16,10 +16,6 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Master Advanced Configuration](#master-advanced-configuration)
 	- [Customize Settings](#customize-settings)
 	- [Enhance Generation Workflow](#enhance-generation-workflow)
-		- [Latent Upscaling](#latent-upscaling)
-		- [Image to Image Painting](#image-to-image-painting)
-		- [Masking](#masking)
-		- [Model Switching](#model-switching)
 
 ## Initial Setup
 
@@ -51,22 +47,6 @@ Feel free to experiment with different settings in ComfyUI. Exploring these opti
 
 ### Enhance Generation Workflow
 
-ComfyUI provides several advanced tools to further refine and enhance your image generation process. Each tool targets different aspects of the generation process, allowing for a comprehensive enhancement of both quality and specificity.
+ComfyUI offers a suite of advanced tools, including **Latent Upscaling**, **Image to Image Painting**, **Masking**, **Model Switching**, and more. Each tool is designed to target specific aspects of the image generation process, enabling comprehensive improvements in both quality and specificity.
 
-#### Latent Upscaling
-
-In ComfyUI, the process of upscaling images transcends traditional pixel-based resizing, focusing instead on the manipulation of latent images. Resizing these latent images involves a more sophisticated approach compared to typical pixel resizing. Directly resizing latent images, rather than pixels, can often result in more noticeable artifacts if not done carefully. This is because latent points contain complex information about the image's attributes and relationships, which can be distorted when naively scaled.
-
-To mitigate these potential issues, the upscaling process typically involves a second phase of sampling. This phase allows the model to refine and adjust the newly upscaled latent points, ensuring that the resulting image maintains high fidelity to the original's aesthetic and structural qualities. By re-sampling the image, sampler effectively smooths out any inconsistencies or artifacts introduced during the upscaling, resulting in a cleaner, more accurate final image.
-
-#### Image to Image Painting
-
-Image to Image Painting is a feature in ComfyUI that allows you to modify an existing image by applying new prompts. This tool is excellent for making gradual refinements or specific adjustments to an image without the need to start from scratch. It is ideal for iterative creative processes, where you can tweak the image until the desired effect is achieved, enhancing the creative control over the final output.
-
-#### Masking
-
-Masking is a powerful feature in ComfyUI that lets you designate certain areas of an image to remain unchanged or to be specifically altered. This is particularly useful for integrating new elements into an existing composition seamlessly. Whether you're looking to preserve certain features or selectively apply changes, masking ensures that you have precise control over the final appearance of your image.
-
-#### Model Switching
-
-This approach allows you to blend the strengths of different AI models to create unique images. Initially, you generate an image using one model to capture specific qualities like color and composition. Then, you switch to a second model in a subsequent rendering step, applying its distinctive style to the already generated image. This method maintains the original image's structure while enhancing it with the artistic flair of another model.
+For in-depth video tutorials that enhance your understanding and practical application of these tools, check out this <a href="https://www.youtube.com/playlist?list=PLH1tkjphTlWUTApzX-Hmw_WykUpG13eza" target="_blank">playlist</a> on <a href="https://www.youtube.com/@OlivioSarikas" target="_blank">Olivio Sarikas</a>' YouTube channel.
