@@ -3,15 +3,13 @@
 - [Checkpoint](#checkpoint)
 - [CLIP](#clip)
 - [VAE](#vae)
-- [Latent Space and Latent Image](#latent-space-and-latent-image)
-	- [Why it is Important](#why-it-is-important)
-	- [Analogy of a Closet](#analogy-of-a-closet)
 - [Prompt](#prompt)
-	- [Prompt Emphasis](#prompt-emphasis)
+- [Prompt Emphasis](#prompt-emphasis)
 - [Samplers and Schedulers](#samplers-and-schedulers)
 - [Seed](#seed)
 - [CFG](#cfg)
 - [Clip Skip](#clip-skip)
+- [Latent Space and Latent Image](#latent-space-and-latent-image)
 
 ## Checkpoint
 
@@ -47,39 +45,11 @@ In the case of image generation models like Stable Diffusion, VAE is used for:
 2. **Manipulation**: In the latent space, it is easier and more efficient to manipulate these features to change the image (e.g., making a face look older or changing the time of day in a photo).
 3. **Reconstruction**: After manipulation, the VAE reconstructs the image from the latent space, incorporating the changes.
 
-## Latent Space and Latent Image
-
-The definition of a latent image is closely tied to the concept of latent space—a fundamental framework within which complex data is encoded and manipulated.
-
-In machine learning, especially in models designed for tasks like image generation or voice synthesis, latent space serves as the abstract layer where input data (like images or sounds) are transformed into a compressed, encoded format. This space captures the essence or core characteristics of the data, often in a way that is not immediately intelligible to humans.
-
-### Why it is Important
-
-1. **Compression**: Latent space allows complex data (like high-resolution images) to be compressed into a more manageable form. This compression is not just about making files smaller but about representing the data in a more fundamental, distilled form.
-2. **Data Generation and Manipulation**: Once data is encoded in the latent space, it can be manipulated to alter the original data or generate entirely new data. For example, by moving around in the latent space of images, you can generate new images that combine features of existing ones, such as blending the styles of two different pictures.
-3. **Efficiency**: Operations in the latent space are typically more computationally efficient. Manipulating compressed representations is quicker and requires less computing power than operating on the full, detailed data.
-
-Latent image, in the context of generative models, refers to the intermediate representation of an image while it is being processed. This latent image is not the final image you see, but a kind of blueprint that the model uses to construct or reconstruct the visible image.
-
-### Analogy of a Closet
-
-Imagine your closet at home, where you keep all your clothes. When you look at it, you see different items organized perhaps by type–shirts together, pants together, and so on. Each item of clothing represents a specific outfit possibility, but the closet as a whole represents every outfit you could possibly create from those clothes.
-
-In this analogy:
-
-- **Your Clothes**: These are like the individual data points (or images) that a machine learns from.
-- **The Closet**: This represents the latent space. It is a compact, organized representation of all the outfits (or images) you could potentially create.
-- **Creating a New Outfit**: When you pull various pieces from different parts of the closet to assemble a new outfit, it is like generating a new image from latent space.
-- **Mix and Match**: Sometimes, you might experiment by mixing and matching clothes in ways you have not before, discovering new combinations that look great. This is akin to a model exploring parts of latent space that were not previously utilized heavily, leading to new and creative outputs.
-- **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
-
-A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
-
 ## Prompt
 
 In Stable Diffusion, a "prompt" is the text description provided to the model to generate an image. It acts as instructions for what the image should depict, ranging from broad concepts to detailed descriptions that include specific elements like mood, style, and colors. The effectiveness of the generated image often depends on the clarity and detail of the prompt.
 
-### Prompt Emphasis
+## Prompt Emphasis
 
 You can adjust the importance of specific parts of the prompt by using weights. For instance, if you have the prompt "flowers inside a blue vase" and want to emphasize "flowers," you can write it as "(flowers:1.2) inside a blue vase". Using brackets without specifying a weight, like "(flowers)", automatically assigns a weight of 1.1.
 
@@ -112,3 +82,31 @@ The effectiveness of CFG is controlled by a "guidance scale" or "guidance weight
 Clip skip is technique that optimizes the image generation process by reducing the number of times the CLIP model evaluates the image's alignment with the text prompt during the diffusion steps. Since CLIP (Contrastive Language-Image Pre-training) evaluations can be computationally expensive, skipping some of these checks can significantly speed up the generation process while generally maintaining a satisfactory alignment between the generated image and the text description.
 
 The challenge with implementing "clip skip" effectively is to balance computational efficiency with image quality. By strategically choosing when to perform these evaluations, one can minimize resource usage without greatly compromising the fidelity of the image to the textual prompt. This approach is especially valuable in scenarios where quick generation is prioritized, or computational resources are limited.
+
+## Latent Space and Latent Image
+
+The definition of a latent image is closely tied to the concept of latent space—a fundamental framework within which complex data is encoded and manipulated.
+
+In machine learning, especially in models designed for tasks like image generation or voice synthesis, latent space serves as the abstract layer where input data (like images or sounds) are transformed into a compressed, encoded format. This space captures the essence or core characteristics of the data, often in a way that is not immediately intelligible to humans.
+
+### Why it is Important
+
+1. **Compression**: Latent space allows complex data (like high-resolution images) to be compressed into a more manageable form. This compression is not just about making files smaller but about representing the data in a more fundamental, distilled form.
+2. **Data Generation and Manipulation**: Once data is encoded in the latent space, it can be manipulated to alter the original data or generate entirely new data. For example, by moving around in the latent space of images, you can generate new images that combine features of existing ones, such as blending the styles of two different pictures.
+3. **Efficiency**: Operations in the latent space are typically more computationally efficient. Manipulating compressed representations is quicker and requires less computing power than operating on the full, detailed data.
+
+Latent image, in the context of generative models, refers to the intermediate representation of an image while it is being processed. This latent image is not the final image you see, but a kind of blueprint that the model uses to construct or reconstruct the visible image.
+
+### Analogy of a Closet
+
+Imagine your closet at home, where you keep all your clothes. When you look at it, you see different items organized perhaps by type–shirts together, pants together, and so on. Each item of clothing represents a specific outfit possibility, but the closet as a whole represents every outfit you could possibly create from those clothes.
+
+In this analogy:
+
+- **Your Clothes**: These are like the individual data points (or images) that a machine learns from.
+- **The Closet**: This represents the latent space. It is a compact, organized representation of all the outfits (or images) you could potentially create.
+- **Creating a New Outfit**: When you pull various pieces from different parts of the closet to assemble a new outfit, it is like generating a new image from latent space.
+- **Mix and Match**: Sometimes, you might experiment by mixing and matching clothes in ways you have not before, discovering new combinations that look great. This is akin to a model exploring parts of latent space that were not previously utilized heavily, leading to new and creative outputs.
+- **Adding New Items**: When you shop and add new items to your closet, it is like updating the model with new data. These new items increase the diversity of outfits you can create. Similarly, adding new data to a model expands its capability to generate a wider variety of images.
+
+A latent image can be seen as a specific outfit laid out on your bed, not yet worn but assembled from elements you chose from your closet. It is ready to be finalized or adjusted further. This outfit represents a potential final image that the model is working towards, using the elements selected from latent space.
