@@ -5,7 +5,6 @@ In the context of machine learning for image generation, samplers and schedulers
 ## Table of Contents
 
 - [How They Work Together](#how-they-work-together)
-	- [In Simple Terms](#in-simple-terms)
 - [Samplers](#samplers)
 	- [Euler](#euler)
 	- [Diffusion Probabilistic Models](#diffusion-probabilistic-models)
@@ -15,10 +14,7 @@ In the context of machine learning for image generation, samplers and schedulers
 	- [Unified Predictor-Corrector](#unified-predictor-corrector)
 - [Schedulers](#schedulers)
 - [Best Combination of Sampler and Scheduler](#best-combination-of-sampler-and-scheduler)
-	- [Model Compatibility with Samplers](#model-compatibility-with-samplers)
-	- [Optimal Setups for Beginning](#optimal-setups-for-beginning)
 - [Impact of Step Count](#impact-of-step-count)
-	- [Optimize Results, Not Just Steps](#optimize-results-not-just-steps)
 
 ## How They Work Together
 
