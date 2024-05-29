@@ -35,15 +35,7 @@ As you become more familiar with ComfyUI, you can further enhance your experienc
 
 ### Customize Settings
 
-ComfyUI allows you to deeply customize your image generation process.
-
-1. **Different Checkpoints**: Various checkpoints can alter the artistic style of your outputs, each trained to offer different levels of realism or abstraction. This diversity is key for aligning outputs with your creative vision.
-2. **Different Samplers and Schedulers**: Explore the impact of different samplers and schedulers on image texture and edge definition.
-3. **Number of Steps**: The number of diffusion steps affects image clarity and detail. Fewer steps can yield quicker, more abstract results, while more steps enhance clarity and detail.
-4. **CFG Scale**: CFG helps control how closely the image matches the text prompt. A higher CFG scale produces images more faithful to the prompt, while a lower scale allows for more creative variations.
-5. **Prompt Emphasis**: Adjusting feature weights within your prompt allows for more personalized outputs. Increasing the weight on specific styles can enhance those characteristics, giving you greater artistic control.
-
-Feel free to experiment with different settings in ComfyUI. Exploring these options can lead to unexpected results and help you understand the capabilities of the tool. Allow yourself to explore and see what you can create.
+ComfyUI allows you to deeply customize your image generation process. You can experiment with various settings such as **Different Checkpoints**, **Different Samplers and Schedulers**, **Number of Steps**, **CFG Scale**, and **Prompt Emphasis** to fine-tune the artistic style and detail of your outputs. Feel free to explore these options to better understand the tool's capabilities and achieve unique creative results.
 
 ### Enhance Generation Workflow
 
