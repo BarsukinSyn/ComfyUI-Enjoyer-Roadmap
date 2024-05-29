@@ -16,6 +16,7 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Master Advanced Configuration](#master-advanced-configuration)
 	- [Customize Settings](#customize-settings)
 	- [Enhance Generation Workflow](#enhance-generation-workflow)
+- [Additional Resources](#additional-resources)
 
 ## Initial Setup
 
@@ -42,3 +43,7 @@ ComfyUI allows you to deeply customize your image generation process. You can ex
 ComfyUI offers a suite of advanced tools, including **Latent Upscaling**, **Image to Image Painting**, **Masking**, **Model Switching**, **LoRA**, and more. Each tool is designed to target specific aspects of the image generation process, enabling comprehensive improvements in both quality and specificity.
 
 For in-depth video tutorials that enhance your understanding and practical application of these tools, check out this <a href="https://www.youtube.com/playlist?list=PLH1tkjphTlWUTApzX-Hmw_WykUpG13eza" target="_blank">playlist</a> on <a href="https://www.youtube.com/@OlivioSarikas" target="_blank">Olivio Sarikas</a>' YouTube channel. Please note that some lessons are only accessible via direct links from his OpenArt <a href="https://openart.ai/workflows/profile/oliviosarikas?sort=latest" target="_blank">profile</a>.
+
+## Additional Resources
+
+If you're looking to delve deeper into the mechanics of image generation and find additional information about using ComfyUI, be sure to explore this detailed <a href="https://www.comflowy.com/docs" target="_blank">documentation</a>.
