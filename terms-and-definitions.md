@@ -2,13 +2,13 @@
 
 - [Checkpoint](#checkpoint)
 - [CLIP](#clip)
+- [CLIP Skip](#clip-skip)
 - [VAE](#vae)
 - [Prompt](#prompt)
 - [Prompt Emphasis](#prompt-emphasis)
 - [Samplers and Schedulers](#samplers-and-schedulers)
 - [Seed](#seed)
 - [CFG](#cfg)
-- [Clip Skip](#clip-skip)
 - [Latent Space and Latent Image](#latent-space-and-latent-image)
 
 ## Checkpoint
@@ -28,9 +28,17 @@ How CLIP is used in image generation:
 2. **Refinement and Accuracy**: CLIP can also be used to refine the output of the image generation process. It evaluates whether the generated images are a good match for the text description and helps guide the model towards better accuracy, ensuring that the final image truly reflects the described content.
 3. **Search and Selection**: In some systems, CLIP can be used to search through a database of images to find those that best match a given text description. This can be useful for applications like photo retrieval based on textual queries.
 
-**Usage in ComfyUI**: CLIP integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
+**Usage in Stable Diffusion**: CLIP integrated into the workflow to facilitate the generation of images that are more faithful to user descriptions. It works behind the scenes, ensuring that the text you enter is effectively translated into visual content. This makes it a powerful tool for creating images that are both creative and aligned with the user's intent.
 
 Overall, CLIP significantly enhances the capability of text-to-image models by bridging the gap between textual descriptions and visual content, making it easier to create accurate and relevant images from text inputs.
+
+## CLIP Skip
+
+This setting controls when to stop the prompt processing by the CLIP network.
+
+CLIP is a sophisticated neural network that turns your text prompt into a numerical format, suited for processing by Stable Diffusion's neural networks. CLIP processes the prompt through multiple layers, starting with a basic digital conversion, then advancing through successive layers. Normally, the output from the final layer is used, corresponding to a CLIP skip setting of -1. However, you can opt to stop earlier, like at the penultimate layer, which is a slider setting of -2. This adjustment can improve results for some specifically trained models.
+
+Note: All SDXL models are designed to use the penultimate layer output, so changing this setting typically won't enhance results and could degrade them. The option exists mainly for compatibility with early SDv1 models that do not automatically select the optimal layer.
 
 ## VAE
 
@@ -76,12 +84,6 @@ Seed in Stable Diffusion acts like a starting point for the algorithm to begin i
 CFG (Classifier-Free Guidance) is a technique used to enhance the alignment between the generated images and the textual prompts guiding the generation. This method operates by running the model in two modes during the inference: one mode uses the text input to direct the image creation, and the other does not. By comparing the outputs from these two modes, the model can be steered to produce results that more closely match the text.
 
 The effectiveness of CFG is controlled by a "guidance scale" or "guidance weight," which adjusts how strongly the text influences the image generation. Increasing this scale tends to produce images that are more relevant and detailed according to the prompt, but setting it too high might lead to artifacts or overly literal interpretations. This feature is particularly valuable in tasks where precise adherence to textual descriptions is critical.
-
-## Clip Skip
-
-Clip skip is technique that optimizes the image generation process by reducing the number of times the CLIP model evaluates the image's alignment with the text prompt during the diffusion steps. Since CLIP (Contrastive Language-Image Pre-training) evaluations can be computationally expensive, skipping some of these checks can significantly speed up the generation process while generally maintaining a satisfactory alignment between the generated image and the text description.
-
-The challenge with implementing "clip skip" effectively is to balance computational efficiency with image quality. By strategically choosing when to perform these evaluations, one can minimize resource usage without greatly compromising the fidelity of the image to the textual prompt. This approach is especially valuable in scenarios where quick generation is prioritized, or computational resources are limited.
 
 ## Latent Space and Latent Image
 
