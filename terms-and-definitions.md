@@ -34,11 +34,11 @@ Overall, CLIP significantly enhances the capability of text-to-image models by b
 
 ## CLIP Skip
 
-This setting controls when to stop the prompt processing by the CLIP network.
+This setting controls when to halt the prompt processing by the CLIP network.
 
-CLIP is a sophisticated neural network that turns your text prompt into a numerical format, suited for processing by Stable Diffusion's neural networks. CLIP processes the prompt through multiple layers, starting with a basic digital conversion, then advancing through successive layers. Normally, the output from the final layer is used, corresponding to a CLIP skip setting of -1. However, you can opt to stop earlier, like at the penultimate layer, which is a slider setting of -2. This adjustment can improve results for some specifically trained models.
+CLIP is a sophisticated neural network that transforms your text prompt into a numerical format, suitable for processing by Stable Diffusion's neural networks. It processes the prompt sequentially through multiple layers, starting with a simple digital conversion. Typically, the output from the final layer is used, which corresponds to a CLIP skip setting of -1. However, you can choose to stop earlier, such as at the penultimate layer, which would be a CLIP skip setting of -2. Adjusting this setting can optimize results for some models trained with this consideration in mind.
 
-Note: All SDXL models are designed to use the penultimate layer output, so changing this setting typically won't enhance results and could degrade them. The option exists mainly for compatibility with early SDv1 models that do not automatically select the optimal layer.
+Note: Since all SDXL models are configured to utilize the output from the penultimate layer, altering this setting usually will not improve results and might even degrade them. This option is mainly provided for compatibility with earlier SDv1 models, which lack an automated mechanism to determine the optimal layer to use.
 
 ## VAE
 
