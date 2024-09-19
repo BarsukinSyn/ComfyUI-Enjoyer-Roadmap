@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "3b46e545e151add1",
+    "type": "split",
+    "children": [
+      {
+        "id": "775d8606114f5d9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6dc96d78e20a5e5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "df77a24621c7d9a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2711d63731433b1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1b9c696b066a3d84",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5c1eb32c16569b5d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c5ad6a1de4f9ee10",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1bd964fcfb92249a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0185fc6a0ff48e68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ec88667aa9b6c9c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "acc60d1447a90723",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3f895be716b65fd9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "35a50ec1a600d2b8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "6dc96d78e20a5e5d",
+  "lastOpenFiles": [
+    "assets/thumbnail.png",
+    "README.md",
+    "assets/thumbnail.webp",
+    "assets/Untitled.webp",
+    "assets/comfyui-thumbnail.png",
+    "terms-and-definitions.md",
+    "samplers-and-schedulers.md",
+    "TODO.md",
+    "log.md",
+    "assets/samplers-and-schedulers",
+    "assets",
+    "README"
+  ]
+}

@@ -1,6 +1,6 @@
 # ComfyUI Enjoyer Roadmap 2024
 
-![A roadmap to ComfyUI enjoyment](assets/thumbnail.png)
+![A roadmap to ComfyUI enjoyment](assets/thumbnail.webp)
 
 ComfyUI Enjoyer Roadmap 2024 offers a structured approach to mastering image generation using ComfyUI with Stable Diffusion.
 
