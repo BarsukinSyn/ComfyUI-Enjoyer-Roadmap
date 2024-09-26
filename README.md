@@ -16,7 +16,7 @@ ComfyUI is a web-based Stable Diffusion interface designed to make process of i
 - [Master Advanced Configuration](#master-advanced-configuration)
 	- [Customize Settings](#customize-settings)
 	- [Enhance Generation Workflow](#enhance-generation-workflow)
-	- [Install ComfyUI Manager](#install-comfy-ui-manager)
+	- [Install ComfyUI Manager](#install-comfyui-manager)
 - [Additional Resources](#additional-resources)
 
 ## Initial Setup
